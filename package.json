@@ -1,0 +1,16 @@
+{
+  "name": "dsh-ollama-cloud-usage",
+  "version": "0.1.0",
+  "description": "Ollama Cloud の使用量と残高を表示する /ocusage コマンド",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
