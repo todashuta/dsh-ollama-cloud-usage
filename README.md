@@ -50,13 +50,27 @@ dsh-ollama-cloud-usage/
 
 ## インストール
 
-### GUI から
+### GitHub から
+
+clone せずに、リポジトリのままインストールできます。
+
+```sh
+dsh plugin --profile web add github:todashuta/dsh-ollama-cloud-usage
+```
+
+`https://github.com/todashuta/dsh-ollama-cloud-usage` の形でも同じです。GitHub の場合はインストール前にリポジトリを `git ls-remote` で確認し、5 秒でタイムアウトします。公開リポジトリなら認証は要りません。private リポジトリのときだけ、そのプロファイルの Git 設定（SSH 鍵や credential helper）を pnpm がそのまま使います。このパッケージは `prepare` スクリプトを持たないので、pnpm にビルドを許可する必要はありません。
+
+Web の **Plugins** ページから入れる場合は、「サードパーティのプラグインをインストール」に同じアドレスを指定します。
+
+インストールするとプロファイルの `package.json` に Git アドレスが記録され、`dsh.profile.bundles` に載り、Plugins ページで有効・無効を切り替えられるようになります。
+
+### GUI から（ローカルのディレクトリ）
 
 1. このディレクトリを好きな場所へ移動する（例: `c:/users/foo/.dsh/plugins/dsh-ollama-cloud-usage`）
 2. Web の **Plugins** ページから、そのパスを指定してインストールする
 3. 再起動する（HMR が有効なら即時反映）
 
-### CLI から
+### CLI から（ローカルのディレクトリ）
 
 ```sh
 dsh plugin --profile web add c:/users/foo/.dsh/plugins/dsh-ollama-cloud-usage
