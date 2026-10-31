@@ -1,6 +1,6 @@
 {
   "name": "dsh-ollama-cloud-usage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ollama Cloud の使用量と残高を表示する /ocusage コマンド",
   "type": "module",
   "main": "index.js",
