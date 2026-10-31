@@ -108,3 +108,7 @@ dsh plugin --profile web remove dsh-ollama-cloud-usage
 ```
 node test-local.mjs
 ```
+
+## ライセンス
+
+MIT
